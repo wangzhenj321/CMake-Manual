@@ -12,8 +12,11 @@
 	The path to the binary directory currently being processed.
 	
 	This the full path to the build directory that is currently being processed by cmake. Each directory added by `add_subdirectory()` will create a binary directory in the build tree, and as it is being processed this variable will be set. For in-source builds this is the current source directory being processed.
-
+	
+4. **CMAKE_CURRENT_SOURCE_DIR**
+	The path to the source directory currently being processed.
+	This the full path to the source directory that is currently being processed by cmake.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MTYzMzc1OF19
+eyJoaXN0b3J5IjpbMTkyMjUwMDE0N119
 -->
