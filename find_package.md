@@ -1,4 +1,4 @@
-
+Load settings for an external project.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0OTk2MTY4MF19
+eyJoaXN0b3J5IjpbODg5MTU2ODMxXX0=
 -->
