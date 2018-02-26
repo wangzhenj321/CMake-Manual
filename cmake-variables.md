@@ -1,5 +1,5 @@
- 1. List i
+ 1. CMAKE_BINARY_DIR
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMjQ4MjgwOF19
+eyJoaXN0b3J5IjpbLTIwNDUyNjE2OTRdfQ==
 -->
