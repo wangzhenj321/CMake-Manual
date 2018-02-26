@@ -2,7 +2,7 @@
 	
 	The path to the top level of the build tree.
 	
-	This is the full path to the top level of the current CMake build tree. For an in-source build, this would be the same as *CMAKE_SOURCE_DIR**.
+	This is the full path to the top level of the current CMake build tree. For an in-source build, this would be the same as *CMAKE_SOURCE_DIR*.
 	
 2. **CMAKE_SOURCE_DIR**
 	
@@ -34,5 +34,5 @@
 	
 	This is the source directory of the most recent `project()` command.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMDM2Mjk3MV19
+eyJoaXN0b3J5IjpbMTA1NDMzNDIzNV19
 -->
