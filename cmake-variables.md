@@ -17,7 +17,12 @@
 	The path to the source directory currently being processed.
 	
 	This the full path to the source directory that is currently being processed by cmake.
-
+	
+5. **PROJECT_BINARY_DIR**
+	Full path to build directory for project.
+	
+	This is the binary directory of the most recent `project()` command.
+	
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MzI1NzU0NV19
+eyJoaXN0b3J5IjpbMTE3NzMwNDY1M119
 -->
