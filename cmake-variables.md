@@ -7,8 +7,11 @@
 	The path to the top level of the source tree.
 	
 	This is the full path to the top level of the current CMake source tree. For an in-source build, this would be the same as **CMAKE_BINARY_DIR**.
+	
+3. **CMAKE_CURRENT_BINARY_DIR**
+	
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxODg3OTQzM119
+eyJoaXN0b3J5IjpbLTc5ODI3NzM3N119
 -->
