@@ -23,6 +23,10 @@
 	
 	This is the binary directory of the most recent `project()` command.
 	
+6. **PROJECT_SOURCE_DIR**
+	Top level source directory for the current project.
+	
+	This is the source directory of the most recent `project()` command.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NzMwNDY1M119
+eyJoaXN0b3J5IjpbOTEyNDk5MzQxXX0=
 -->
