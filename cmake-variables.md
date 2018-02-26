@@ -8,7 +8,7 @@
 	
 	The path to the top level of the source tree.
 	
-	This is the full path to the top level of the current CMake source tree. For an in-source build, this would be the same as **CMAKE_BINARY_DIR**.
+	This is the full path to the top level of the current CMake source tree. For an in-source build, this would be the same as *CMAKE_BINARY_DIR*.
 	
 3. **CMAKE_CURRENT_BINARY_DIR**
 	
@@ -34,5 +34,5 @@
 	
 	This is the source directory of the most recent `project()` command.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NDMzNDIzNV19
+eyJoaXN0b3J5IjpbMTUxNzg0ODYyOV19
 -->
