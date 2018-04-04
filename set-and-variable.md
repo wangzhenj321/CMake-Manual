@@ -27,26 +27,26 @@ The [cmake-variables(7)](https://cmake.org/cmake/help/v3.10/manual/cmake-variabl
 
 #### Set Normal Variable
 
+Set the given <variable> in the current function or directory scope.
+
 ```cmake
 set(<variable> <value>... [PARENT_SCOPE])
 ```
 
-Set the given <variable> in the current function or directory scope.
-
 #### Set Cache Entry
+
+Set the given cache <variable> (cache entry).
 
 ```cmake
 set(<variable> <value>... CACHE <type> <docstring> [FORCE])
 ```
 
-Set the given cache <variable> (cache entry).
-
 It is possible for the cache entry to exist prior to the call but have no type set if it was created on the [cmake(1)](https://cmake.org/cmake/help/v3.10/manual/cmake.1.html#manual:cmake(1)) command line by a user through the `-D<var>=<value>` option without specifying a type.
 
 #### Set Environment Variable
 
+Set the current process environment <variable> to the given value.
+
 ```cmake
 set(ENV{<variable>} <value>...)
 ```
-
-Set the current process environment <variable> to the given value.
