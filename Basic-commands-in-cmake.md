@@ -1,3 +1,20 @@
+**Table of contents**
+- [Examples](#examples)
+- [add_definitions](#add_definitions)
+- [add_executable](#add_executable)
+- [add_library](#add_library)
+- [add_subdirectory](#add_subdirectory)
+- [cmake_minimum_required](#cmake_minimum_required)
+- [find_library](#find_library)
+- [find_package](#find_package)
+- [include](#include)
+- [include_directories](#include_directories)
+- [install](#install)
+- [message](#message)
+- [project](#project)
+- [set](#set)
+- [target_link_libraries](#target_link_libraries)
+
 ## Examples
 
 **DevCassons/CMakeLists.txt**
@@ -122,16 +139,13 @@ message([<mode>] "message to display" ...)
 ```
 
 The optional `<mode>` keyword determines the type of message:
-> (none)         = Important information
-STATUS         = Incidental information
-WARNING        = CMake Warning, continue processing
-AUTHOR_WARNING = CMake Warning (dev), continue processing
-SEND_ERROR     = CMake Error, continue processing,
-                              but skip generation
-FATAL_ERROR    = CMake Error, stop processing and generation
-DEPRECATION    = CMake Deprecation Error or Warning if variable
-                 CMAKE_ERROR_DEPRECATED or CMAKE_WARN_DEPRECATED
-                 is enabled, respectively, else no message.
+- ***(none)         = Important information***
+- ***STATUS         = Incidental information***
+- ***WARNING        = CMake Warning, continue processing***
+- AUTHOR_WARNING = CMake Warning (dev), continue processing
+- SEND_ERROR     = CMake Error, continue processing, but skip generation
+- ***FATAL_ERROR    = CMake Error, stop processing and generation***
+- DEPRECATION    = CMake Deprecation Error or Warning if variable CMAKE_ERROR_DEPRECATED or CMAKE_WARN_DEPRECATED is enabled, respectively, else no message.
 
 ## [project](https://cmake.org/cmake/help/v3.10/command/project.html)
 
