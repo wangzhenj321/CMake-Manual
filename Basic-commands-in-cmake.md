@@ -93,13 +93,13 @@ set (CMAKE_SKIP_RPATH TRUE)
 set(OE_QMAKE_PATH_EXTERNAL_HOST_BINS ${HOST_SYSROOT}/usr/bin/qt5)
 ```
 
-## [add_definitions]()
-## [add_executable]()
-## [add_library]()
-## [add_subdirectory]()
-## [cmake_minimum_required]()
-## [find_library]()
-## [find_package]()
+## [add_definitions](https://cmake.org/cmake/help/v3.10/command/add_definitions.html)
+## [add_executable](https://cmake.org/cmake/help/v3.10/command/add_executable.html)
+## [add_library](https://cmake.org/cmake/help/v3.10/command/add_library.html)
+## [add_subdirectory](https://cmake.org/cmake/help/v3.10/command/add_subdirectory.html)
+## [cmake_minimum_required](https://cmake.org/cmake/help/v3.10/command/cmake_minimum_required.html)
+## [find_library](https://cmake.org/cmake/help/v3.10/command/find_library.html)
+## [find_package](https://cmake.org/cmake/help/v3.10/command/find_package.html)
 
 Load settings for an external project.
 
@@ -112,11 +112,28 @@ find_package(<package> [version] [EXACT] [QUIET] [MODULE]
 
 Finds and loads settings from an external project. The `QUIET` option disables messages. The `REQUIRED` option stops processing with an error message if the package cannot be found.
 
-## [include]()
-## [include_directories]()
-## [install]()
-## [message]()
-## [project]()
+## [include](https://cmake.org/cmake/help/v3.10/command/include.html)
+## [include_directories](https://cmake.org/cmake/help/v3.10/command/include_directories.html)
+## [install](https://cmake.org/cmake/help/v3.10/command/install.html)
+## [message](https://cmake.org/cmake/help/v3.10/command/message.html)
+
+```cmake
+message([<mode>] "message to display" ...)
+```
+
+The optional `<mode>` keyword determines the type of message:
+> (none)         = Important information
+STATUS         = Incidental information
+WARNING        = CMake Warning, continue processing
+AUTHOR_WARNING = CMake Warning (dev), continue processing
+SEND_ERROR     = CMake Error, continue processing,
+                              but skip generation
+FATAL_ERROR    = CMake Error, stop processing and generation
+DEPRECATION    = CMake Deprecation Error or Warning if variable
+                 CMAKE_ERROR_DEPRECATED or CMAKE_WARN_DEPRECATED
+                 is enabled, respectively, else no message.
+
+## [project](https://cmake.org/cmake/help/v3.10/command/project.html)
 
 The top-level *CMakeLists.txt* file for a project must contain a literal, direct call to the `project()` command; loading one through the `include()` command is not sufficient. If no such call exists CMake will implicitly add one to the top that enables the default languages (C and CXX).
 
@@ -144,4 +161,4 @@ It is possible for the cache entry to exist prior to the call but have no type s
 
 Set the current process environment <variable> to the given value.
 
-## [target_link_libraries]()
+## [target_link_libraries](https://cmake.org/cmake/help/v3.10/command/target_link_libraries.html)
