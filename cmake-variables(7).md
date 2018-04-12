@@ -26,6 +26,7 @@
 6. CMAKE_FIND_ROOT_PATH_MODE_PROGRAM
 7. CMAKE_LIBRARY_PATH
 8. CMAKE_MODULE_PATH
+    
     `;-list` of directories specifying a search path for CMake modules to be loaded by the `include()` or `find_package()` commands before checking the default modules that come with CMake. By default it is empty, it is intended to be set by the project.
 9. CMAKE_SYSROOT
 
