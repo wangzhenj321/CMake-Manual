@@ -173,6 +173,10 @@ It is possible for the cache entry to exist prior to the call but have no type s
 
 #### Set Environment Variable
 
+```cmake
+set(ENV{<variable>} <value>...)
+```
+
 Set the current process environment <variable> to the given value.
 
 ## [target_link_libraries](https://cmake.org/cmake/help/v3.10/command/target_link_libraries.html)
