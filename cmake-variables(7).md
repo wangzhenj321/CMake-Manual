@@ -36,6 +36,22 @@
 1. CMAKE_SYSTEM_NAME
 
 ## Variables that Control the Build
+1. CMAKE_AUTOMOC
+
+    Whether to handle `moc` automatically for Qt targets. This variable is used to initialize the ***AUTOMOC*** property on all the targets. See that target property for additional information.
+
+2. CMAKE_AUTOUIC
+
+    Whether to handle `uic` automatically for Qt targets. This variable is used to initialize the ***AUTOUIC*** property on all the targets. See that target property for additional information.
+
+3. CMAKE_INCLUDE_CURRENT_DIR
+
+    Automatically add the current source- and build directories to the include path.
+
+    If this variable is enabled, CMake automatically adds ***CMAKE_CURRENT_SOURCE_DIR*** and ***CMAKE_CURRENT_BINARY_DIR*** to the include path for each directory. These additional include directories do not propagate down to subdirectories. This is useful mainly for out-of-source builds, where files generated into the build tree are included by files located in the source tree.
+
+    By default `CMAKE_INCLUDE_CURRENT_DIR` is `OFF`.
+
 ## Variables for Languages
 ## Variables for CTest
 ## Variables for CPack
