@@ -29,8 +29,12 @@
 8. ***CMAKE_MODULE_PATH***
     
     ***;-list*** of directories specifying a search path for CMake modules to be loaded by the `include()` or `find_package()` commands before checking the default modules that come with CMake. By default it is empty, it is intended to be set by the project.
+
+9. ***CMAKE_PREFIX_PATH***
+
     
-9. ***CMAKE_SYSROOT***
+
+10. ***CMAKE_SYSROOT***
 
 ## Variables that Describe the System
 1. ***CMAKE_SYSTEM_NAME***
