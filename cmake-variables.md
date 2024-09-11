@@ -6,6 +6,10 @@
 
     This is the full path to the build directory that is currently being processed by cmake. Each directory added by `add_subdirectory()` will create a binary directory in the build tree, and as it is being processed this variable will be set. For in-source builds this is the current source directory being processed.
 
+- CMAKE_MINIMUM_REQUIRED_VERSION
+
+    The \<min\> version of CMake given to the most recent call to the `cmake_minimum_required(VERSION)` command in the current variable scope or any parent variable scope.
+
 - CMAKE_PROJECT_NAME
 
     The name of the top level project.
@@ -41,6 +45,15 @@
 ## Variables that Control the Build
 
 ## Variables for Languages
+
+- CMAKE_CXX_STANDARD
+
+    Default value for CXX_STANDARD target property if set when a target is created.
+
+- CMAKE_CXX_STANDARD_REQUIRED
+
+    Default value for CXX_STANDARD_REQUIRED target property if set when a target is created.
+
 
 ## Variables for CTest
 

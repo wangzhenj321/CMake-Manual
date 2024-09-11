@@ -1,18 +1,16 @@
 ## Scripting Commands
 
-### cmake_minimum_required
+- [cmake_minimum_required](./cmake-commands/cmake_minimum_required.md)
 
-Require a minimum version of cmake.
+    Require a minimum version of cmake.
 
-```
-cmake_minimum_required(VERSION <min>[...<policy_max>] [FATAL_ERROR])
-```
+### cmake_policy
 
-### configure_file
+Manage CMake Policy settings.
 
-Copy a file to another location and modify its contents.
+- [configure_file](./cmake-commands/configure_file.md)
 
-https://blog.csdn.net/qq_38410730/article/details/103741579
+    Copy a file to another location and modify its contents.
 
 ### find_package
 
@@ -37,22 +35,17 @@ Operations on semicolon-separated lists.
 
 https://www.cnblogs.com/Braveliu/p/15820627.html
 
-### option
+### message
 
-Provide a boolean option that the user can optionally select.
+Log a message.
 
-```
-option(<variable> "<help_text>" [value])
-```
+- [option](./cmake-commands/option.md)
 
-https://www.cnblogs.com/Braveliu/p/15665143.html
+    Provide a boolean option that the user can optionally select.
 
-### set
+- [set](./cmake-commands/set.md)
 
-Set a normal, cache, or environment variable to a given value.
-
-https://cmake.org/cmake/help/v3.28/command/set.html
-https://blog.csdn.net/Calvin_zhou/article/details/104060927
+    Set a normal, cache, or environment variable to a given value.
 
 ## Project Commands
 
@@ -64,36 +57,21 @@ Add preprocessor definitions to the compilation of source files.
 
 Add options to the compilation of source files.
 
-### add_executable
+- [add_executable](./cmake-commands/add_executable.md)
 
-Add an executable to the project using the specified source files.
+    Add an executable to the project using the specified source files.
 
-```
-add_executable(<name> [WIN32] [MACOSX_BUNDLE]
-               [EXCLUDE_FROM_ALL]
-               [source1] [source2 ...])
-```
+- [add_library](./cmake-commands/add_library.md)
 
-### add_library
-
-Add a library to the project using the specified source files.
-
-https://blog.csdn.net/fengbingchun/article/details/128160777
+    Add a library to the project using the specified source files.
 
 ### add_link_options
 
 Add options to the link step for executable, shared library or module library targets in the current directory and below that are added after this command is invoked.
 
-### add_subdirectory
+- add_subdirectory
 
-Add a subdirectory to the build.
-
-```
-add_subdirectory(source_dir [binary_dir] [EXCLUDE_FROM_ALL] [SYSTEM])
-```
-
-https://cmake.org/cmake/help/v3.28/command/add_subdirectory.html
-https://blog.csdn.net/Dontla/article/details/129265306
+    Add a subdirectory to the build.
 
 ### include_directories
 
@@ -105,31 +83,18 @@ include_directories([AFTER|BEFORE] [SYSTEM] dir1 [dir2 ...])
 
 https://cmake.org/cmake/help/v3.28/command/include_directories.html
 
-### project
+- [project](./cmake-commands/project.md)
 
 Set the name of the project.
 
-```
-project(<PROJECT-NAME> [<language-name>...])
-project(<PROJECT-NAME>
-        [VERSION <major>[.<minor>[.<patch>[.<tweak>]]]]
-        [DESCRIPTION <project-description-string>]
-        [HOMEPAGE_URL <url-string>]
-        [LANGUAGES <language-name>...])
-```
+- [target_compile_definitions](./cmake-commands/target_compile_definitions.md)
 
-Sets the name of the project, and stores it in the variable PROJECT_NAME. When called from the top-level CMakeLists.txt also stores the project name in the variable CMAKE_PROJECT_NAME.
+    Add compile definitions to a target.
 
-Also sets the variables:
+### target_include_directories
 
-- PROJECT_SOURCE_DIR, \<PROJECT-NAME\>_SOURCE_DIR
+Add include directories to a target.
 
-    Absolute path to the source directory for the project.
+- [target_link_libraries](./cmake-commands/target_link_libraries.md)
 
-- PROJECT_BINARY_DIR, \<PROJECT-NAME\>_BINARY_DIR
-
-    Absolute path to the binary directory for the project.
-
-### target_link_libraries
-
-Specify libraries or flags to use when linking a given target and/or its dependents.
+    Specify libraries or flags to use when linking a given target and/or its dependents.
