@@ -6,7 +6,7 @@
 
 ## Properties on Directories
 
-- [INCLUDE_DIRECTORIES](./Properties%20on%20Directories/INCLUDE_DIRECTORIES.md)
+- [INCLUDE_DIRECTORIES](./cmake-properties/Properties%20on%20Directories/INCLUDE_DIRECTORIES.md)
 
 ## Properties on Targets
 
@@ -19,6 +19,8 @@
     Boolean describing whether the value of CXX_STANDARD is a requirement.
 
     If this property is set to ON, then the value of the CXX_STANDARD target property is treated as a requirement. If this property is OFF or unset, the CXX_STANDARD target property is treated as optional and may "decay" to a previous standard if the requested is not available.
+
+- [INCLUDE_DIRECTORIES](./cmake-properties/Properties%20on%20Targets/INCLUDE_DIRECTORIES.md)
 
 ## Properties on Tests
 
