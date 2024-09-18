@@ -1,6 +1,6 @@
 ## Scripting Commands
 
-- [cmake_minimum_required](./cmake-commands/cmake_minimum_required.md)
+- [cmake_minimum_required](./cmake-commands/Scripting%20Commands/cmake_minimum_required.md)
 
     Require a minimum version of cmake.
 
@@ -8,7 +8,7 @@
 
 Manage CMake Policy settings.
 
-- [configure_file](./cmake-commands/configure_file.md)
+- [configure_file](./cmake-commands/Scripting%20Commands/configure_file.md)
 
     Copy a file to another location and modify its contents.
 
@@ -39,11 +39,11 @@ https://www.cnblogs.com/Braveliu/p/15820627.html
 
 Log a message.
 
-- [option](./cmake-commands/option.md)
+- [option](./cmake-commands/Scripting%20Commands/option.md)
 
     Provide a boolean option that the user can optionally select.
 
-- [set](./cmake-commands/set.md)
+- [set](./cmake-commands/Scripting%20Commands/set.md)
 
     Set a normal, cache, or environment variable to a given value.
 
@@ -57,11 +57,11 @@ Add preprocessor definitions to the compilation of source files.
 
 Add options to the compilation of source files.
 
-- [add_executable](./cmake-commands/add_executable.md)
+- [add_executable](./cmake-commands/Project%20Commands/add_executable.md)
 
     Add an executable to the project using the specified source files.
 
-- [add_library](./cmake-commands/add_library.md)
+- [add_library](./cmake-commands/Project%20Commands/add_library.md)
 
     Add a library to the project using the specified source files.
 
@@ -69,32 +69,26 @@ Add options to the compilation of source files.
 
 Add options to the link step for executable, shared library or module library targets in the current directory and below that are added after this command is invoked.
 
-- add_subdirectory
+- [add_subdirectory](./cmake-commands/Project%20Commands/add_subdirectory.md)
 
     Add a subdirectory to the build.
 
-### include_directories
+- [include_directories](./cmake-commands/Project%20Commands/include_directories.md)
 
-Add include directories to the build.
+    Add include directories to the build.
 
-```
-include_directories([AFTER|BEFORE] [SYSTEM] dir1 [dir2 ...])
-```
+- [project](./cmake-commands/Project%20Commands/project.md)
 
-https://cmake.org/cmake/help/v3.28/command/include_directories.html
+    Set the name of the project.
 
-- [project](./cmake-commands/project.md)
-
-Set the name of the project.
-
-- [target_compile_definitions](./cmake-commands/target_compile_definitions.md)
+- [target_compile_definitions](./cmake-commands/Project%20Commands/target_compile_definitions.md)
 
     Add compile definitions to a target.
 
-### target_include_directories
+- [target_include_directories](./cmake-commands/Project%20Commands/target_include_directories.md)
 
-Add include directories to a target.
+    Add include directories to a target.
 
-- [target_link_libraries](./cmake-commands/target_link_libraries.md)
+- [target_link_libraries](./cmake-commands/Project%20Commands/target_link_libraries.md)
 
     Specify libraries or flags to use when linking a given target and/or its dependents.
