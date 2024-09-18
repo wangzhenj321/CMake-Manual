@@ -6,6 +6,8 @@
 
 ## Properties on Directories
 
+- [INCLUDE_DIRECTORIES](./Properties%20on%20Directories/INCLUDE_DIRECTORIES.md)
+
 ## Properties on Targets
 
 - CXX_STANDARD
