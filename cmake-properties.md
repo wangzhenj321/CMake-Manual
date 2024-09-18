@@ -22,6 +22,8 @@
 
 - [INCLUDE_DIRECTORIES](./cmake-properties/Properties%20on%20Targets/INCLUDE_DIRECTORIES.md)
 
+- [INTERFACE_INCLUDE_DIRECTORIES](./cmake-properties/Properties%20on%20Targets/INTERFACE_INCLUDE_DIRECTORIES.md)
+
 ## Properties on Tests
 
 ## Properties on Source Files
