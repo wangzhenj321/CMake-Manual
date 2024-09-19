@@ -10,6 +10,14 @@
 
 ## Properties on Targets
 
+- COMPILE_FEATURES
+
+    Compiler features enabled for this target.
+
+    The list of features in this property are a subset of the features listed in the `CMAKE_C_COMPILE_FEATURES`, `CMAKE_CUDA_COMPILE_FEATURES`, and `CMAKE_CXX_COMPILE_FEATURES` variables.
+
+    Contents of `COMPILE_FEATURES` may use "generator expressions" with the syntax `$<...>`.
+
 - CXX_STANDARD
 
     The C++ standard whose features are requested to build this target.
