@@ -24,6 +24,12 @@ If no type is given explicitly the type is `STATIC` or `SHARED` based on whether
 
 ### Interface Libraries
 
+```
+add_library(<name> INTERFACE)
+```
+
+
+
 ### Imported Libraries
 
 ### Alias Libraries
