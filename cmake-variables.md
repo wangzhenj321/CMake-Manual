@@ -46,6 +46,18 @@
 
 ## Variables for Languages
 
+- CMAKE_C_COMPILE_FEATURES
+
+    List of features known to the C compiler
+
+    These features are known to be available for use with the C compiler. This list is a subset of the features listed in the `CMAKE_C_KNOWN_FEATURES` global property.
+
+- CMAKE_CXX_COMPILE_FEATURES
+
+    List of features known to the C++ compiler
+
+    These features are known to be available for use with the C++ compiler. This list is a subset of the features listed in the `CMAKE_CXX_KNOWN_FEATURES` global property.
+
 - CMAKE_CXX_STANDARD
 
     Default value for CXX_STANDARD target property if set when a target is created.
