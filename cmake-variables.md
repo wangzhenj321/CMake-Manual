@@ -6,6 +6,14 @@
 
     This is the full path to the build directory that is currently being processed by cmake. Each directory added by `add_subdirectory()` will create a binary directory in the build tree, and as it is being processed this variable will be set. For in-source builds this is the current source directory being processed.
 
+- CMAKE_CURRENT_SOURCE_DIR
+
+    The path to the source directory currently being processed.
+
+    This is the full path to the source directory that is currently being processed by cmake.
+
+    When run in `cmake -P` script mode, CMake sets the variables `CMAKE_BINARY_DIR`, `CMAKE_SOURCE_DIR`, `CMAKE_CURRENT_BINARY_DIR` and `CMAKE_CURRENT_SOURCE_DIR` to the current working directory.
+
 - CMAKE_MINIMUM_REQUIRED_VERSION
 
     The \<min\> version of CMake given to the most recent call to the `cmake_minimum_required(VERSION)` command in the current variable scope or any parent variable scope.
