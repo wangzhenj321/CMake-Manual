@@ -49,6 +49,10 @@ The `<docstring>` must be specified as a line of text providing a quick summary 
 
 If the cache entry does not exist prior to the call or the `FORCE` option is given then the cache entry will be set to the given value.
 
+It is possible for the cache entry to exist prior to the call but have no type set if it was created on the cmake(1) command line by a user through the `-D<var>=<value>` option without specifying a type. In this case the set command will add the type.
+
+Furthermore, if the `<type>` is `PATH` or `FILEPATH` and the `<value>` provided on the command line is a relative path, then the set command will treat the path as relative to the current working directory and convert it to an absolute path.
+
 ### Set Environment Variable
 
 ```
