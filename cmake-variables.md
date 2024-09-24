@@ -52,6 +52,22 @@
 
     Semicolon-separated list of directories, represented using forward slashes, specifying a search path for CMake modules to be loaded by the `include()` or `find_package()` commands before checking the default modules that come with CMake. By default it is empty. It is intended to be set by the project.
 
+- CMAKE_PROJECT_INCLUDE
+
+    A CMake language file or module to be included as the last step of all `project()` command calls. This is intended for injecting custom code into project builds without modifying their source.
+
+- CMAKE_PROJECT_INCLUDE_BEFORE
+
+    A CMake language file or module to be included as the first step of all `project()` command calls. This is intended for injecting custom code into project builds without modifying their source.
+
+- CMAKE_PROJECT_\<PROJECT-NAME\>_INCLUDE
+
+    A CMake language file or module to be included as the last step of any `project()` command calls that specify `<PROJECT-NAME>` as the project name. This is intended for injecting custom code into project builds without modifying their source.
+
+- CMAKE_PROJECT_\<PROJECT-NAME\>_INCLUDE_BEFORE
+
+    A CMake language file or module to be included as the first step of any project() command calls that specify <PROJECT-NAME> as the project name. This is intended for injecting custom code into project builds without modifying their source.
+
 ## Variables that Describe the System
 
 ## Variables that Control the Build
@@ -78,6 +94,9 @@
 
     Default value for CXX_STANDARD_REQUIRED target property if set when a target is created.
 
+- CMAKE_\<LANG\>_COMPILER
+
+    The full path to the compiler for `LANG`.
 
 ## Variables for CTest
 
