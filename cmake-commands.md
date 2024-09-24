@@ -6,7 +6,11 @@
 
 - [configure_file](./cmake-commands/Scripting%20Commands/configure_file.md)
 
+- [endfunction](./cmake-commands/Scripting%20Commands/endfunction.md)
+
 - [find_package](./cmake-commands/Scripting%20Commands/find_package.md)
+
+- [function](./cmake-commands/Scripting%20Commands/function.md)
 
 - [get_filename_component](./cmake-commands/Scripting%20Commands/get_filename_component.md)
 
@@ -27,6 +31,10 @@
 - [add_compile_definitions](./cmake-commands/Project%20Commands/add_compile_definitions.md)
 
 - [add_compile_options](./cmake-commands/Project%20Commands/add_compile_options.md)
+
+- [add_custom_command](./cmake-commands/Project%20Commands/add_custom_command.md)
+
+- [add_custom_target](./cmake-commands/Project%20Commands/add_custom_target.md)
 
 - [add_executable](./cmake-commands/Project%20Commands/add_executable.md)
 
@@ -51,3 +59,5 @@
 - [target_include_directories](./cmake-commands/Project%20Commands/target_include_directories.md)
 
 - [target_link_libraries](./cmake-commands/Project%20Commands/target_link_libraries.md)
+
+- [target_sources](./cmake-commands/Project%20Commands/target_sources.md)
