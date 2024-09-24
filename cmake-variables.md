@@ -48,6 +48,10 @@
 
     If present and true, this will cause all libraries to be built shared unless the library was explicitly added as a static library. This variable is often added to projects as an `option()` so that each user of a project can decide if they want to build the project using shared or static libraries.
 
+- CMAKE_MODULE_PATH
+
+    Semicolon-separated list of directories, represented using forward slashes, specifying a search path for CMake modules to be loaded by the `include()` or `find_package()` commands before checking the default modules that come with CMake. By default it is empty. It is intended to be set by the project.
+
 ## Variables that Describe the System
 
 ## Variables that Control the Build
